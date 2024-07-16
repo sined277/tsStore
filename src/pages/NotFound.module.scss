@@ -1,0 +1,48 @@
+
+
+$primary-color: #ff6b6b;
+$secondary-color: #4ecdc4;
+$text-color: #333;
+
+.notFoundPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.notFoundContainer {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid $secondary-color;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.notFoundTitle {
+    font-size: 8rem;
+    color: $primary-color;
+    margin: 0;
+}
+
+.notFoundMessage {
+    font-size: 1.5rem;
+    color: $text-color;
+    margin: 20px 0;
+}
+
+.notFoundLink {
+    font-size: 1rem;
+    color: white;
+    background-color: $primary-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}

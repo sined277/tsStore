@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es5",                           // Указывает, на какую версию JavaScript будет компилироваться TypeScript
+      "lib": ["dom", "dom.iterable", "esnext"],  // Определяет библиотеки, которые будут использоваться в проекте
+      "allowJs": true,                           // Позволяет включать файлы JavaScript в компиляцию
+      "skipLibCheck": true,                      // Пропускает проверку типов в файлах библиотек
+      "esModuleInterop": true,                   // Включает совместимость с модулями ES
+      "allowSyntheticDefaultImports": true,      // Позволяет использовать синтетические импорты по умолчанию
+      "strict": true,                            // Включает все строгие проверки типов
+      "forceConsistentCasingInFileNames": true,  // Требует использования одинакового регистра в названиях файлов
+      "noFallthroughCasesInSwitch": true,        // Запрещает переход по умолчанию в операторах switch
+      "module": "esnext",                        // Указывает на использование следующей версии спецификации ECMAScript для модулей
+      "moduleResolution": "node",                // Определяет, как TypeScript ищет модули
+      "resolveJsonModule": true,                 // Позволяет импортировать файлы JSON как модули
+      "isolatedModules": true,                   // Проверяет каждый файл как отдельный модуль
+      "jsx": "react-jsx",                        // Указывает, что используется React JSX
+      "baseUrl": "./src",                        // Базовый URL для абсолютных импортов
+      "paths": {                                 // Псевдонимы для путей
+        "@components/*": ["components/*"],
+        "@assets/*": ["assets/*"]
+      },
+      "typeRoots": ["./node_modules/@types", "./declaration.d.ts"]
+    },
+    "include": ["src/components", "declaration.d.ts"],                         // Определяет, какие файлы будут включены в компиляцию
+    "exclude": ["node_modules", "build"]         // Определяет, какие файлы и каталоги будут исключены из компиляции
+  }
+  
