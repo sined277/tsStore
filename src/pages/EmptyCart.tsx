@@ -19,6 +19,7 @@ const EmptyCart = () => {
             </div>
         </div>
     )
+    
 }
 
 export default EmptyCart
