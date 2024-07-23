@@ -7,6 +7,7 @@ import { fetchPizzas, selectLoadingStatus, selectPizzas } from '../redux/slices/
 import { IPizzaBlock } from '../components/PizzaBlock'
 import { useAppDispatch } from '../redux/store'
 
+
 const Home = () => {
     const pizzaData = useSelector(selectPizzas)
     const loadingStatus = useSelector(selectLoadingStatus)
